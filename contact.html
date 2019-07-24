@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me | MTG Digital</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="assets/img/fablicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/contactstyle.css" type="text/css">
+
+</head>
+
+<body>
+    <!-- header and nav -->
+    <div class="navBar">
+
+        <div class="navbar">
+            <a href="#" class="active"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="index.html#webdev"><i class="fa fa-fw fa-book"></i> Portfolio</a>
+            <a id="modal-btn" href="#"><i class="fa fa-fw fa-user"></i> About Me</a>
+        </div>
+    </div>
+
+    <!-- About me Modal -->
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Nice to meet you, I'm Manuel</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/pic.jpg" id="me" alt="picture of me" width="30%" />
+                <p id="modalp">I am currently a full time student at PennLPS Coding bootcamp.</p>
+                <p id="modalp">I have been in the graphic arts space for over 30 years. Born in New York City, I was raised in the south Bronx, and always admired the grafitti movement for it's sheer audacity. As the graf culture matured, the pieces evolved in it's
+                    complexity and structure. I fell in love with art, and combined my love for art with technology. I moved to the Spring Garden area of Philadelpha in the early '80's. I studied art at the Thomas Eakins House.</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Thanks for checking out my portfolio.</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact me modal -->
+
+    <div class="contContainer">
+        <h1 class="brand"><span>MTG</span> Digital Media</h1>
+        <div class="contWrapper animated bounceInLeft">
+            <div class="company-info">
+                <h3>Manuel Gonzalez</h3>
+                <ul>
+                    <li><i class="fa fa-road"></i> 500 E. Luzurne St.</li>
+                    <li><i class="fa fa-phone"></i> (267) 673-0219</li>
+                    <li><i class="fa fa-envelope"></i> daddyto9@gmail.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Email me</h3>
+
+                <div class="alert">Thank you, your message has been sent.</div>
+
+                <form id="contactForm">
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+                    <p>
+                        <label>Company</label>
+                        <input type="text" name="company" id="company">
+                    </p>
+                    <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="text" name="phone" id="phone">
+                    </p>
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" id="message"></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- <img id="logoish" src="assets/img/facechoose.png"> -->
+        <div class="copyright">
+            &copy; 2019 LBD is a subsidiary of MTG Enterprises, LLC.
+        </div>
+        <div class="container">
+            <ul class="icons">
+                <li><a href="#" class="icon fa fa-fw fa-twitter"><span class="label"></span></a></li>
+                <li><a href="#" class="icon fa fa-fw fa-facebook"><span class="label"></span></a></li>
+                <li><a href="#" class="icon fa fa-fw fa-instagram"><span class="label"></span></a></li>
+                <li><a href="#" class="icon fa fa-fw fa-envelope-o"><span class="label"></span></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main2.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+
+</html>

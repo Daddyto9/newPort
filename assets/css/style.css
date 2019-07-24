@@ -1,0 +1,342 @@
+/* modal */
+
+:root {
+    --modal-duration: 1s;
+    --modal-color: #fdab00;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 55vw;
+    overflow: hidden;
+    border-bottom: white 5px solid;
+}
+
+.layer {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.layer .content-wrap {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+}
+
+.layer .content-body {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.layer img {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layer h1 {
+    font-size: 2em;
+}
+
+.bottom {
+    background: #222;
+    z-index: 1;
+}
+
+.bottom .content-body {
+    right: 5%;
+}
+
+h1 {
+    color: #fdab00;
+}
+
+.top {
+    background: #eee;
+    color: #222;
+    z-index: 2;
+    width: 50vw;
+}
+
+.top .content-body {
+    left: 5%;
+    color: #222;
+}
+
+.handle {
+    position: absolute;
+    height: 100%;
+    display: block;
+    background: #fdab00;
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+
+/* Nav Bar */
+
+#logoish {
+    width: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    float: left;
+}
+
+
+/* Style the navigation bar */
+
+.navbar {
+    width: 100%;
+    /* height: 5%; */
+    background-color: #222;
+    overflow: auto;
+    border-bottom: white 5px solid;
+}
+
+
+/* Navbar links */
+
+.navbar a {
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+/* Navbar links on mouse-over */
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+
+/* Current/active navbar link */
+
+.active {
+    background-color: #fdab00;
+}
+
+.banner {
+    border-top: 5px solid #fdab00;
+}
+
+
+/* footer */
+
+#footer {
+    background-color: #222;
+    color: white;
+    height: 60px;
+    align-content: center;
+    padding: 5px 0 0 0;
+}
+
+ul {
+    margin-right: 50px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+.copyright {
+    padding-top: 2%;
+    margin-left: 100px;
+    float: left;
+}
+
+.icon {
+    color: white;
+    list-style: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+    float: right;
+}
+
+.style2 {
+    border-top: 5px solid #fdab00;
+    border-bottom: 5px solid #fdab00;
+}
+
+a:hover {
+    color: #fdab00 !important;
+}
+
+
+/* modal */
+
+.button {
+    background: #428bca;
+    /* padding: 1em 2em; */
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #3876ac;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal2 {
+    display: none;
+}
+
+.modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+}
+
+.modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    background: #fff;
+    height: auto;
+}
+
+.modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#me {
+    float: left;
+    border: 5px solid #fdab00;
+}
+
+#modalp {
+    margin-left: 10px;
+    text-align: right;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* effects */
+
+@media screen and (min-width: 501px) {
+    #me {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+    .content-body,
+    h1,
+    p {
+        font-size: 75%;
+    }
+    .copyright {
+        float: none;
+    }
+    .icons {
+        float: none;
+    }
+    #footer {
+        height: auto;
+    }
+    #me {
+        display: none;
+    }
+}
