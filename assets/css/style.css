@@ -207,11 +207,20 @@ a:hover {
     color: #fdab00 !important;
 }
 
+button.picBtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: #222 !important;
+}
+
+button.picBtn:hover {
+    color: #fdab00 !important;
+}
+
 
 /* modal */
 
 .button {
-    background: #428bca;
+    background: #fdab00;
     /* padding: 1em 2em; */
     color: #fff;
     border: 0;
