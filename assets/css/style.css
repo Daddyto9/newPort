@@ -308,6 +308,16 @@ button.picBtn:hover {
     text-align: right;
 }
 
+.wrapper.style3 {
+    background-color: #000;
+    color: #bfbfbf;
+    background-image: url(../../assets/img/brightColorCityHall.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
 @keyframes modalopen {
     from {
         opacity: 0;
@@ -348,4 +358,17 @@ button.picBtn:hover {
     #me {
         display: none;
     }
+}
+
+.banner.full {
+    padding: 0;
+    min-height: 100vh;
+    height: 100vh !important;
+    position: relative;
+}
+
+.banner.half {
+    padding: 0;
+    min-height: 50vh;
+    height: 50vh !important;
 }

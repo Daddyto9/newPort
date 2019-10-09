@@ -3042,15 +3042,15 @@ table.alt tbody tr td {
     border-color: rgba(0, 0, 0, 0.15);
 }
 
-.wrapper.style3 {
+/* .wrapper.style3 {
     background-color: #000;
     color: #bfbfbf;
-    background-image: url(../../images/bg.jpg);
+    background-image: url(../assets/img/brightColorCityHall.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     position: relative;
-}
+} */
 
 .wrapper.style3 input,
 .wrapper.style3 select,
